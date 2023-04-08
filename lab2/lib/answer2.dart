@@ -3,7 +3,6 @@
 void main() {
   Set fruits = {"Apple", "Banana", "Mango"};
   printFruit(fruits);
-  print(fruits);
 }
 
 void printFruit(Set fruits) {

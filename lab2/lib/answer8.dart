@@ -4,6 +4,10 @@ import 'dart:io';
 void main() {
   List toDos = [];
   int count = 0;
+  app(toDos, count);
+}
+
+void app(List toDos, int count) {
   print("""Enter 
   'add' to Add,
   'remove' to Remove, 
@@ -14,13 +18,13 @@ void main() {
   if (cmd == "add") {
     add(toDos, count);
   } else if (cmd == "remove") {
-    remove(toDos);
+    remove(toDos, count);
   } else if (cmd == "view") {
-    view(toDos);
+    view(toDos, count);
   } else if (cmd == "exit") {
   } else {
     print("Enter a valid text.");
-    main();
+    app(toDos, count);
   }
 }
 
@@ -28,23 +32,23 @@ void add(List toDos, int count) {
   print("Enter task to add:- ");
   String? task = stdin.readLineSync()!;
   toDos.add(task);
-  print(toDos);
-  main();
+  app(toDos, count);
 }
 
-void remove(List toDos) {
+void remove(List toDos, int count) {
+  print("TODO List");
   for (int i = 0; i < toDos.length; i++) {
     print("$i. ${toDos[i]}");
   }
   print("Enter number row to delete a task.");
   int del = int.parse(stdin.readLineSync()!);
-  toDos.remove(del);
-  main();
+  toDos.removeAt(del);
+  app(toDos, count);
 }
 
-void view(List toDos) {
+void view(List toDos, int count) {
   for (int i = 0; i < toDos.length; i++) {
     print("$i. ${toDos[i]}");
   }
-  main();
+  app(toDos, count);
 }
