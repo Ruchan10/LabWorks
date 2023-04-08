@@ -1,7 +1,8 @@
+  // Write a dart program to create a simple calculator that performs addition, subtraction, multiplication, and division.
+
 import 'dart:io';
 
 void main() {
-  // Write a dart program to create a simple calculator that performs addition, subtraction, multiplication, and division.
   print(
       "What action do you want to perform? \n 1 - Addition  2 - Subtraction \n 3 - Division 4 - Multiplication");
   int action = int.parse(stdin.readLineSync()!);

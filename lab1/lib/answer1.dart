@@ -1,7 +1,6 @@
-import 'dart:io';
+  // Write a dart program to check if the number is odd or even.
 
 void main() {
-  // Write a dart program to check if the number is odd or even.
   check(3);
 }
 

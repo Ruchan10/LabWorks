@@ -1,7 +1,6 @@
-import 'dart:io';
+  // Write a dart program to check whether a character is a vowel or consonant.
 
 void main() {
-  // Write a dart program to check whether a character is a vowel or consonant.
   vowelOrConst("a");
 }
 

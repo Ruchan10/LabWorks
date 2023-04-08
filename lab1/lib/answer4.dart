@@ -1,7 +1,6 @@
-import 'dart:io';
+  // Write a dart program to print your name 100 times.
 
 void main() {
-  // Write a dart program to print your name 100 times.
   printName("Ruchan");
 }
 
