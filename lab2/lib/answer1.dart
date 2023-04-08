@@ -1,6 +1,6 @@
-  // Create a list of names and print all names using the list.
+// Create a list of names and print all names using the list.
 void main() {
-  List names = ["RUchan", "Kayastha", "RK"];
+  List names = ["Ruchan", "Kayastha", "RK"];
   printList(names);
 }
 

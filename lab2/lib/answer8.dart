@@ -23,7 +23,7 @@ void app(List toDos, int count) {
     view(toDos, count);
   } else if (cmd == "exit") {
   } else {
-    print("Enter a valid text.");
+    print("Ednter a vali text.");
     app(toDos, count);
   }
 }

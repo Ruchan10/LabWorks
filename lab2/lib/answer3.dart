@@ -1,4 +1,4 @@
-// Create a set of fruits and print all fruits using a loop.
+// Create a program that reads list of expenses amount using user input and print total.
 import 'dart:io';
 
 void main() {
